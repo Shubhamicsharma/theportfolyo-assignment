@@ -1,7 +1,7 @@
 'use client'
 
 // import SectionHeading from "../SectionHeading/SectionHeading";
-import "./Page.scss";
+import "./error.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Preloader from "@/components/Preloader/Preloader";
@@ -47,7 +47,7 @@ const Page404 = () => {
               <div className="">
                 <h3>4<span>0</span>4</h3>
                 <h4>Page Not Found</h4>
-                <p>Oops, the page you are looking for can't be found!</p>
+                <p>Oops, the page you are looking for can&apos;t be found!</p>
                 {/* Use Link from next/link for client-side navigation */}
                 <Link legacyBehavior href="/">
                   <a className="st-btn st-style1 st-color1">Go to Home</a>
