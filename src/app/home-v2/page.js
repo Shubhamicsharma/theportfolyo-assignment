@@ -1,6 +1,5 @@
 'use client'
 import About from '@/components/About/About';
-import Hero from '@/components/Hero/Hero';
 import Iconbox from '@/components/Iconbox/Iconbox';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
@@ -12,9 +11,11 @@ import PortfolioSection from '@/components/Portfolio/PortfolioSection';
 import Review from '@/components/Review/ReviewSection';
 import Contact from '@/components/Contact/Contact';
 import CustomCursor from '@/components/CustomCursor/CustomCursor';
-import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import Preloader from '@/components/Preloader/Preloader';
+import Header2 from '@/components/Header/Header2';
+import Hero2 from '@/components/Hero/Hero2';
+import Hero from '@/components/Hero/Hero';
 import Blog from '@/components/Blog/BlogSection';
 
 const Page = () => {
@@ -50,13 +51,12 @@ const Page = () => {
 
     <>
       {isLoading ? <Preloader /> : (
-        <div>
+        <div className='st-get-sidebar'>
         <CustomCursor />
         {users && (
           <div >
-            <Header data = {users} />
-            <div className='st-height-b80 st-height-lg-b80'></div>
-            <Hero data={users.about} socialData={users.social_handles}/>
+            <Header2 data = {users.about} />
+            <Hero2 data={users.about} socialData={users.social_handles}/>
             <About data={users} data-aos="fade-right"/>
             <Iconbox data={users} data-aos="fade-right"/>
             <Skill data={users} data-aos="fade-right" />
@@ -64,7 +64,7 @@ const Page = () => {
             <PortfolioSection data={users} data-aos="fade-right" />
             <Review data={users} data-aos="fade-right"/>
             <Blog data={users} data-aos="fade-right"/>
-            <Contact data={users} socialData={users.social_handles} data-aos="fade-right"/>
+            <Contact data={users} socialData={users.social_handles} />
   
           </div>
         )}
