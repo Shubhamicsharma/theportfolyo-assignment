@@ -1,3 +1,6 @@
+'use client'
+
+
 import PropTypes from 'prop-types';
 import "./Review.scss";
 import SectionHeading from '../SectionHeading/SectionHeading';

@@ -1,3 +1,6 @@
+'use client'
+
+
 import Slider from "react-slick";
 import PropTypes from 'prop-types';
 import './Carousel.scss';

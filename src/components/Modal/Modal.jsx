@@ -1,3 +1,7 @@
+
+'use client'
+
+
 import './Modal.scss';
 
 const Modal = ({ img, title, subTitle, modalClose, live, github }) => {

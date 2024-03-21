@@ -1,3 +1,5 @@
+'use client'
+
 import './Review.scss';
 import PropTypes from 'prop-types';
 

@@ -1,3 +1,6 @@
+'use client'
+
+
 import PropTypes from 'prop-types';
 import './Portfolio.scss';
 import SectionHeading from '../SectionHeading/SectionHeading';

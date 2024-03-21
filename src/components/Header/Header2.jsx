@@ -1,3 +1,6 @@
+'use client'
+
+
 import Link from 'next/link';
 import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';

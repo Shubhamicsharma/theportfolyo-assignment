@@ -1,3 +1,6 @@
+'use client'
+
+
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import { get } from 'react-scroll/modules/mixins/scroller';

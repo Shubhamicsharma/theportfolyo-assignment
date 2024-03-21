@@ -1,3 +1,6 @@
+'use client'
+
+
 import PropTypes from 'prop-types';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import './About.scss'; // Import module stylesheet

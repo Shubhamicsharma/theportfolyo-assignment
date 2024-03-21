@@ -1,3 +1,5 @@
+'use client'
+
 import PropTypes from 'prop-types';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import Image from 'next/image';
