@@ -17,21 +17,21 @@ const Hero = ({ data, socialData }) => {
   let imgLink = data.avatar.url;
   imgLink = imgLink.toString();
 
-useEffect(() => {
-  if (typeof window !== 'undefined') {
-    const handleScroll = () => {
-      const scrollValue = window.scrollY;
-      const heroElements = document.querySelector('.st-hero-wrap .st-hero-img');
-      if (heroElements) {
-        heroElements.style.right = `${scrollValue * -0.1}px`;
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }
-}, []);
+// useEffect(() => {
+//   if (typeof window !== 'undefined') {
+//     const handleScroll = () => {
+//       const scrollValue = window.scrollY;
+//       const heroElements = document.querySelector('.st-hero-wrap .st-hero-img');
+//       if (heroElements) {
+//         heroElements.style.right = `${scrollValue * -0.1}px`;
+//       }
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }
+// }, []);
 
   return (
     <section id="home" className='st-hero-wrap'>
