@@ -14,19 +14,20 @@ const Header = ({data}) => {
     setMobileToggle(!mobileToggle);
   }
 
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 10) {
+      if (document.documentElement.scrollTop >= 10) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    document.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
