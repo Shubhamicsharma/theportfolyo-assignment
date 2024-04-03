@@ -41,7 +41,7 @@ const Hero = ({ data, socialData }) => {
           <div className="st-hero-text">
             <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Hello I&apos;m</h3>
             {name && <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">{parser(name)}</h1>}
-            {title && <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">{title}</h2>}
+            {title &&<h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">{title}</h2>}
             <div className='st-hero-btn' data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
               <ScrollLink className= "st-btn st-style1 st-color1" to="contact">
                 Hire Me
